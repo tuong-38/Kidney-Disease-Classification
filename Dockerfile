@@ -7,3 +7,4 @@ RUN pip install -r requirements.txt
 
 # Chạy ứng dụng (Giả sử bạn sẽ tạo file app.py cho giao diện Web)
 CMD ["python3", "app.py"]
+
