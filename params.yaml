@@ -1,0 +1,12 @@
+# Các thông số chung (Có thể bạn đã có từ trước)
+AUGMENTATION: True
+IMAGE_SIZE: [224, 224, 3] # VGG16 yêu cầu ảnh 224x224
+
+# Các thông số cho việc chuẩn bị mô hình và huấn luyện
+BATCH_SIZE: 16
+STEPS_PER_EPOCH: 10
+EPOCHS: 1
+LEARNING_RATE: 0.01
+INCLUDE_TOP: False # Chúng ta sẽ tự thêm lớp phân loại riêng
+CLASSES: 4        # 4 loại: Adenocarcinoma, Normal, Cyst, Tumor
+WEIGHTS: imagenet # Sử dụng tri thức đã học từ tập ImageNet
