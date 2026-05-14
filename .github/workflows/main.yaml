@@ -48,5 +48,5 @@ jobs:
 
       - name: Build and Push Docker Image
         run: |
-          docker build -t your-username/kidney-disease:latest .
-          docker push your-username/kidney-disease:latest
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/kidney:latest .
+          docker push ${{ secrets.DOCKER_USERNAME }}/kidney:latest
